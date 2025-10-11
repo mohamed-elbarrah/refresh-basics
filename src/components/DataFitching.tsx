@@ -4,9 +4,15 @@ import { useEffect, useState } from "react";
 
 function DataFitching() {
 
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
 const [isLoading, setIsLoding] = useState(true);
-const [error, setError] = useState(null);
-const [users, setUsers] = useState([]);
+const [error, setError] = useState<string | null>(null);
+const [users, setUsers] = useState<User[]>([]);
 
 useEffect(() => {
   
@@ -16,7 +22,7 @@ useEffect(() => {
       setError(null);
       setUsers(res.data)
     })
-    .catch((error)=>{
+    .catch(()=>{
         setIsLoding(false);
         setError("Something went wrong!");
         setUsers([]);
