@@ -22,7 +22,7 @@ const initialState: State = {
   users: []
 }
 
-// 
+// create action type
 type Action = 
 | { type: 'FETCH_SUCCESS'; payload: User[] }
 | { type: 'FETCH_ERROR' };
