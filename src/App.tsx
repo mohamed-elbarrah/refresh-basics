@@ -1,14 +1,16 @@
+// import ReducerHook from "./components/ReducerHook"
+// import Counters from "./components/Counters"
 import DataFitching from "./components/DataFitching"
-import ReducerHook from "./components/ReducerHook"
+
 
 
 function App() {
 
   return (
     <>
+      {/* <ReducerHook /> */}
+      {/* <Counters /> */}
       <DataFitching/>
-      /////////////////////////////////////////////////////////////////////////////////////////////////////
-      <ReducerHook />
     </>
   )
 }
