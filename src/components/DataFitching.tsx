@@ -10,7 +10,7 @@ interface User {
 
 // create state interface
 interface State {
-  isLoading: boolean;
+  isLoading: true;
   error: string | null;
   users: User[];
 }
