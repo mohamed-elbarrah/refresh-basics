@@ -3,12 +3,12 @@
 
 const balance = 100;
 
-const reducer = (state =  balance, action: { type: string }) =>{
+const reducer = (state =  balance, action: { type: string,  }) =>{
     switch (action.type) {
         case "DEPOSIT":
-            return state + 10;
+            return state + action.payload;
         case "DROW":
-            return state - 10;
+            return state - action.payload;
         default:
             return state;
     }
