@@ -1,5 +1,5 @@
 import {  useState } from "react"
-import { UseSelector, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { diposit, drow } from "../redux/BANK_ACCOUNT/bankActions";
 
 const BankAccount = () => {
